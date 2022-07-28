@@ -1,11 +1,12 @@
 import prevImage from "./images/image-product-desktop.jpg";
+import { MdOutlineShoppingCart } from 'react-icons/md'
 
 function App() {
   return (
     <div className="App">
       <div className="w-screen h-screen bg-cream font-montserrat flex justify-center items-center overflow-hidden">
         <div className="bg-white flex items-center rounded-3xl overflow-hidden">
-          <img src={prevImage} alt="preview image" className="h-[422px]" />
+          <img src={prevImage} alt="preview image" className="h-[436px]" />
           <div className="h-fit w-[320px]">
             <div className="px-10 py-6">
               <h3 className="uppercase text-dark-grayish-blue tracking-widest text-sm mb-2">
@@ -26,7 +27,7 @@ function App() {
                   $169.99
                 </span>
               </div>
-              <button className="border block w-full font-bold text-white bg-dark-cyan py-2 rounded-lg">Add to Cart</button>
+              <button className="flex items-center justify-center w-full font-bold text-white bg-dark-cyan py-4 rounded-lg"><MdOutlineShoppingCart size={24} className='mr-2' />Add to Cart</button>
             </div>
           </div>
         </div>
