@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+:root {
+    --dark-cyan: hsl(158, 36%, 40%);
+    --cream: hsl(30, 38%, 92%);
+    --dark-blue: hsl(212, 21%, 14%);
+    --grayish-blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+    --font-primary: 'Montserrat', sans-serif;
+    --font-second: 'Fraunces', serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-primary);
+}
+
+.app {
+    background-color: var(--cream);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--dark-blue);
+}
+
+.app .container {
+    position: relative;
+    height: 480px;
+    width: 650px;
+    display: flex;
+    background: var(--white);
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+.app .container .image-preview {
+    height: 100%;
+}
+
+.app .container .detail-product {
+    padding: 16px 24px;
+}
+
+.app .container .detail-product .type-product {
+    text-transform: uppercase;
+    color: var(--grayish-blue);
+    font-size: 14px;
+    letter-spacing: 4px;
+    display: inline-block;
+}
+
+.app .container .detail-product .name-product {
+    font-size: 36px;
+    font-family: var(--font-second);
+    font-weight: 700;
+    margin: 16px 0;
+}
+
+.app .container .detail-product .desc-product {
+    color: var(--grayish-blue);
+}
+
+.app .container .detail-product .price {
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+
+.app .container .detail-product .price .price-discon,
+.app .container .detail-product .price .price-ori {
+    display: block;
+    margin: 16px 0;
+}
+
+.app .container .detail-product .price .price-discon {
+    font-family: var(--font-second);
+    font-size: 36px;
+    color: var(--dark-cyan);
+    margin-right: 12px;
+}
+
+.app .container .detail-product .price .price-ori {
+    color: var(--grayish-blue);
+    text-decoration: line-through;
+}
+
+.app .container .detail-product .addtocart {
+    display: flex;
+    padding: 16px;
+    background: var(--dark-cyan);
+    color: var(--white);
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition-timing-function: ease-in;
+    transition-duration: 0.3s;
+}
+
+.app .container .detail-product .addtocart:hover {
+    background: hsl(158, 36%, 25%);
+}
