@@ -90,6 +90,8 @@
 
 .app .container .detail-product .addtocart {
     display: flex;
+    width: 100%;
+    border: none;
     padding: 16px;
     background: var(--dark-cyan);
     color: var(--white);
